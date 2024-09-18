@@ -1,0 +1,10 @@
+@import '../../../assets/styles/mixins';
+
+.header {
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+
+  &__content {
+    @include content;
+  }
+}
