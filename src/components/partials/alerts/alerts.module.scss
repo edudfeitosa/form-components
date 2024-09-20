@@ -1,0 +1,22 @@
+@import "../../../assets/styles/mixins";
+
+.alerts {
+  margin: -10px 0 10px 0;
+  width: 50%;
+
+  .alert {
+    @include alerts(#917600, #fff4d8)
+  }
+
+  .error {
+    @include alerts(#ff0000, #ffc2c2)
+  }
+
+  .success {
+    @include alerts(#2c5c00, #c4d8ba)
+  }
+
+  .info {
+    @include alerts(#002993, #d8e1ff)
+  }
+}
