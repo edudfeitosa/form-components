@@ -1,15 +1,15 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from './input.module.scss';
 
-type inputProps = React.ComponentProps<'input'> & {
+type InputProps = React.ComponentProps<'input'> & {
     label: string;
 }
 
-const Input = ({label, ...props}: inputProps) => (
+const Input = forwardRef<HTMLInputElement, InputProps>(({label, ...props}, ref) => (
     <div className={styles.input}>
         <label>{label}</label>
-        <input {...props} />
+        <input ref={ref} {...props} />
     </div>
-);
+));
 
 export default Input;

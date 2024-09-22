@@ -6,7 +6,7 @@
 }
 
 @mixin alerts($color, $backgroundColor) {
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 4px;
     font-size: 0.75rem;
     font-weight: 500;

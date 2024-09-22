@@ -5,7 +5,7 @@
   width: 50%;
 
   .alert {
-    @include alerts(#917600, #fff4d8)
+    @include alerts(#917600, #fff4d8);
   }
 
   .error {
